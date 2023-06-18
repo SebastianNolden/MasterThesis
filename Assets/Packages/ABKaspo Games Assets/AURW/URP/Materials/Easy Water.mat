@@ -8,7 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Easy Water
-  m_Shader: {fileID: -6465566751694194690, guid: a163e6edbdb3b904b9f6c487cc337c4b, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: a163e6edbdb3b904b9f6c487cc337c4b,
+    type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -54,7 +55,7 @@ Material:
     - _Alpha_Channel: 1
     - _Depth: 0.03
     - _Depth_Strength: 1
-    - _False_Displacement_Strength: -0.1
+    - _False_Displacement_Strength: 0.4
     - _False_Displacement_Tiling: 9
     - _Foam_Normal_Render: 1
     - _Foam_Render: 1
@@ -67,9 +68,9 @@ Material:
     - _Speed: 0.75
     - _Tiling: 9
     m_Colors:
-    - _Color_A: {r: 0.25338194, g: 0.67016536, b: 0.735849, a: 0.4}
-    - _Color_B: {r: 0.48362404, g: 0.6441512, b: 0.7169812, a: 0.6039216}
-    - _Color_C: {r: 0.27058816, g: 0.49570608, b: 0.7568628, a: 1}
+    - _Color_A: {r: 0.26717696, g: 0.6548132, b: 0.7169812, a: 0.4}
+    - _Color_B: {r: 0.47552508, g: 0.6534131, b: 0.735849, a: 0.6039216}
+    - _Color_C: {r: 0.27058825, g: 0.75686276, b: 0.649554, a: 1}
     - _Main_Direction: {r: 1, g: -1, b: 0, a: 0}
     - _Second_Direction: {r: -1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
