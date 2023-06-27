@@ -71,8 +71,8 @@ Material:
     - _Color_A: {r: 0.26717696, g: 0.6548132, b: 0.7169812, a: 0.4}
     - _Color_B: {r: 0.47552508, g: 0.6534131, b: 0.735849, a: 0.6039216}
     - _Color_C: {r: 0.27058825, g: 0.75686276, b: 0.649554, a: 1}
-    - _Main_Direction: {r: 1, g: -1, b: 0, a: 0}
-    - _Second_Direction: {r: -1, g: 0, b: 0, a: 0}
+    - _Main_Direction: {r: 0.5, g: -0.5, b: 0, a: 0}
+    - _Second_Direction: {r: -0.5, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &3176851506685539521
 MonoBehaviour:
