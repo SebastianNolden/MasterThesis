@@ -11,7 +11,6 @@ public class AudioLooper : MonoBehaviour
 
     private AudioSource audioSource;
     private bool isFadingIn;
-    private bool isFadingOut;
     private float currentFadeTime;
     private float remainingTime;
 
@@ -69,7 +68,6 @@ public class AudioLooper : MonoBehaviour
         audioSource.volume = volume;
 
         if (currentFadeTime >= fadeOutDuration) {
-            isFadingOut = false;
             audioSource.volume = 0f;
             audioSource.Stop();
         }
