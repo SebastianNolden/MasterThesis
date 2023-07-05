@@ -51,9 +51,7 @@ public class AudioLooper : MonoBehaviour
     }
 
     private void FadeIn() {
-        currentFadeTime += Time.deltaTime;
-        float volume = currentFadeTime / audioSourceMaxVolume;
-        audioSource.volume = volume;
+        Lerp(0, audioSourceMaxVolume, fadeInDuration);
 
         if (currentFadeTime >= fadeInDuration) {
             isFadingIn = false;
@@ -63,14 +61,17 @@ public class AudioLooper : MonoBehaviour
     }
 
     private void FadeOut() {
-        currentFadeTime += Time.deltaTime;
-        float volume = remainingTime / fadeOutDuration;
-        audioSource.volume = volume;
+        Lerp(audioSourceMaxVolume, 0, fadeOutDuration);
 
         if (currentFadeTime >= fadeOutDuration) {
             audioSource.volume = 0f;
             audioSource.Stop();
         }
+    }
+
+    private void Lerp(float start, float end, float fadeDuration) {
+        currentFadeTime += Time.deltaTime;
+        audioSource.volume = Mathf.Lerp(start, end, currentFadeTime / fadeDuration);
     }
 
 }
