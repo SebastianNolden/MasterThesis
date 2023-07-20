@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: high4aminute
   m_EditorClassIdentifier: 
   song: {fileID: 8300000, guid: 1e79a380e3e31ba47997bb43933c977d, type: 3}
-  songBpm: 0
+  songBpm: 170
+  firstBeatOffset: 3
+  musicSpawn: []

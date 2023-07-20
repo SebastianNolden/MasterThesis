@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Dangerous
   m_EditorClassIdentifier: 
   song: {fileID: 8300000, guid: c4613118b327dc748ad3c79ba46f0910, type: 3}
-  songBpm: 0
+  songBpm: 132
+  firstBeatOffset: 0
+  musicSpawn: []
