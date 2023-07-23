@@ -4,65 +4,62 @@ using UnityEngine;
 
 public class SizeManager : MonoBehaviour
 {
-    [SerializeField] float small = 0.5f;
-    [SerializeField] float medium = 1f;
-    [SerializeField] float big = 1.5f;
+    [SerializeField] GameObject dumbbellNormalL;
+    [SerializeField] GameObject dumbbellHalfL;
+    [SerializeField] GameObject dumbbellOneandhalfL;
 
-    [SerializeField] Vector3 smallPositionR;
-    [SerializeField] Vector3 mediumPositionR;
-    [SerializeField] Vector3 bigPositionR;
+    [SerializeField] GameObject dumbbellNormalR;
+    [SerializeField] GameObject dumbbellHalfR;
+    [SerializeField] GameObject dumbbellOneandhalfR;
 
-    [SerializeField] Vector3 smallPositionL;
-    [SerializeField] Vector3 mediumPositionL;
-    [SerializeField] Vector3 bigPositionL;
-
-
-    [SerializeField] GameObject rightHandle;
-    [SerializeField] GameObject leftHandle;
-
-    private Vector3 smallVec;
-    private Vector3 mediumVec;
-    private Vector3 bigVec;
-
-    private void Start() {
-        smallVec = new Vector3(small, small, small);
-        mediumVec = new Vector3(medium, medium, medium);
-        bigVec = new Vector3(big, big, big);
-    }
-
+    [ContextMenu("ResetHandle")]
     public void ResetHandle() {
-        SetPosAndScale(mediumPositionR, mediumPositionL, mediumVec, mediumVec);
+        SetObjectActive(dumbbellNormalL, dumbbellNormalR);
     }
 
+    [ContextMenu("SetSmallandBig")]
     public void SetSmallandBig() {
-        SetPosAndScale(smallPositionL, bigPositionR, smallVec, bigVec);
+        SetObjectActive(dumbbellHalfL, dumbbellOneandhalfR);
     }
 
+    [ContextMenu("SetMediumandBig")]
     public void SetMediumandBig() {
-        SetPosAndScale(mediumPositionL, bigPositionR, mediumVec, bigVec);
+        SetObjectActive(dumbbellNormalL, dumbbellOneandhalfR);
     }
 
+    [ContextMenu("SetMediumandSmall")]
     public void SetMediumandSmall() {
-        SetPosAndScale(mediumPositionL, smallPositionR, mediumVec, smallVec);
+        SetObjectActive(dumbbellNormalL, dumbbellHalfR);
     }
 
+    [ContextMenu("SetBigandSmall")]
     public void SetBigandSmall() {
-        SetPosAndScale(bigPositionL, smallPositionR, bigVec, smallVec);
+        SetObjectActive(dumbbellOneandhalfL, dumbbellHalfR);
     }
 
+    [ContextMenu("SetBigandMedium")]
     public void SetBigandMedium() {
-        SetPosAndScale(bigPositionL, mediumPositionR, bigVec, mediumVec);
+        SetObjectActive(dumbbellOneandhalfL, dumbbellNormalR);
     }
 
+    [ContextMenu("SetSmallandMedium")]
     public void SetSmallandMedium() {
-        SetPosAndScale(smallPositionL, mediumPositionR, smallVec, mediumVec);
+        SetObjectActive(dumbbellHalfL, dumbbellNormalR);
     }
 
-    private void SetPosAndScale(Vector3 posL, Vector3 posR, Vector3 scaleL, Vector3 scaleR) {
-        rightHandle.transform.position = posR;
-        rightHandle.transform.localScale = scaleR;
+    private void DeactivateAll() {
+        dumbbellHalfL.SetActive(false);
+        dumbbellNormalL.SetActive(false);
+        dumbbellOneandhalfL.SetActive(false);
 
-        leftHandle.transform.position = posL;
-        leftHandle.transform.localScale = scaleL;
+        dumbbellHalfR.SetActive(false);
+        dumbbellNormalR.SetActive(false);
+        dumbbellOneandhalfR.SetActive(false);
+    }
+
+    private void SetObjectActive(GameObject left, GameObject right) {
+        DeactivateAll();
+        left.SetActive(true);
+        right.SetActive(true);
     }
 }

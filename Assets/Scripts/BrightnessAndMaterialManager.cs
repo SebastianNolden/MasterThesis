@@ -4,81 +4,109 @@ using UnityEngine;
 
 public class BrightnessAndMaterialManager : MonoBehaviour
 {
-    [SerializeField] Material normalMat;
-    
     // brightness material
-    [SerializeField] Material brightMat;
-    [SerializeField] Material darkMat;
+    [SerializeField] Material normalBrightness;
+    [SerializeField] Material darkerBrightness;
+    [SerializeField] Material darkestBrightness;
 
     // wood & Polystryrene material
+    [SerializeField] Material metalMatS;
+    [SerializeField] Material metalMatB;
     [SerializeField] Material woodMat;
     [SerializeField] Material polyMat;
 
-    [SerializeField] Renderer leftHandleS;
-    [SerializeField] Renderer leftHandleB;
-    [SerializeField] Renderer rightHandleS;
-    [SerializeField] Renderer rightHandleB;
+    [SerializeField] WeightMaterialController smallL;
+    [SerializeField] WeightMaterialController normalL;
+    [SerializeField] WeightMaterialController bigL;
 
+    [SerializeField] WeightMaterialController smallR;
+    [SerializeField] WeightMaterialController normalR;
+    [SerializeField] WeightMaterialController bigR;
 
-
+    [ContextMenu("ResetHandle")]
     public void ResetHandle() {
-        SetMaterialsOnObjects(normalMat, normalMat);
+        SetMaterialsOnObjects(metalMatS, metalMatB, metalMatS, metalMatB);
     }
 
     // Brightness functions
-    public void SetBrightandNormal() {
-        SetMaterialsOnObjects(brightMat, normalMat);
+    [ContextMenu("SetDarkerandNormal")]
+    public void SetDarkerandNormal() {
+        SetMaterialsOnObjects(darkerBrightness, normalBrightness);
     }
 
-    public void SetNormalandDark() {
-        SetMaterialsOnObjects(normalMat, darkMat);
+    [ContextMenu("SetNormalandDarkest")]
+    public void SetNormalandDarkest() {
+        SetMaterialsOnObjects(normalBrightness, darkestBrightness);
     }
 
-    public void SetBrightandDark() {
-        SetMaterialsOnObjects(brightMat, darkMat);
+    [ContextMenu("SetDarkerandDarkest")]
+    public void SetDarkerandDarkest() {
+        SetMaterialsOnObjects(darkerBrightness, darkestBrightness);
     }
 
-    public void SetNormalandBright() {
-        SetMaterialsOnObjects(normalMat, brightMat);
+    [ContextMenu("SetNormalandDarker")]
+    public void SetNormalandDarker() {
+        SetMaterialsOnObjects(normalBrightness, darkerBrightness);
     }
 
-    public void SetDarkandBright() {
-        SetMaterialsOnObjects(darkMat, brightMat);
+    [ContextMenu("SetDarkestandDarker")]
+    public void SetDarkestandDarker() {
+        SetMaterialsOnObjects(darkestBrightness, darkerBrightness);
     }
 
-    public void SetDarkandNormal() {
-        SetMaterialsOnObjects(darkMat, normalMat);
+    [ContextMenu("SetDarkestandNormal")]
+    public void SetDarkestandNormal() {
+        SetMaterialsOnObjects(darkestBrightness, normalBrightness);
     }
 
     // Material Functions
+    [ContextMenu("SetNormalandWood")]
     public void SetNormalandWood() {
-        SetMaterialsOnObjects(normalMat, woodMat);
+        SetMaterialsOnObjects(metalMatS, metalMatB, woodMat, woodMat);
     }
 
+    [ContextMenu("SetWoodandPoly")]
     public void SetWoodandPoly() {
         SetMaterialsOnObjects(woodMat, polyMat);
     }
 
+    [ContextMenu("SetPolyandNormal")]
     public void SetPolyandNormal() {
-        SetMaterialsOnObjects(polyMat, normalMat);
+        SetMaterialsOnObjects(polyMat, polyMat, metalMatS, metalMatB);
     }
 
+    [ContextMenu("SetWoodandNormal")]
     public void SetWoodandNormal() {
-        SetMaterialsOnObjects(woodMat, normalMat);
+        SetMaterialsOnObjects(woodMat, woodMat, metalMatS, metalMatB);
     }
 
+    [ContextMenu("SetPolyandWood")]
     public void SetPolyandWood() {
         SetMaterialsOnObjects(polyMat, woodMat);
     }
 
+    [ContextMenu("SetNormalandPoly")]
     public void SetNormalandPoly() {
-        SetMaterialsOnObjects(normalMat, polyMat);
+        SetMaterialsOnObjects(metalMatS, metalMatB, polyMat, polyMat);
+    }
+
+    private void SetMaterialsOnObjects(Material leftS, Material leftB, Material rightS, Material rightB) {
+        smallL.SetMaterial(leftS, leftB, rightS, rightB);
+        normalL.SetMaterial(leftS, leftB, rightS, rightB);
+        bigL.SetMaterial(leftS, leftB, rightS, rightB);
+
+        smallR.SetMaterial(leftS, leftB, rightS, rightB);
+        normalR.SetMaterial(leftS, leftB, rightS, rightB);
+        bigR.SetMaterial(leftS, leftB, rightS, rightB);
     }
 
     private void SetMaterialsOnObjects(Material left, Material right) {
-        leftHandleS.material = left;
-        leftHandleB.material = left;
-        rightHandleS.material = right;
-        rightHandleB.material = right;
+        smallL.SetMaterial(left, right);
+        normalL.SetMaterial(left, right);
+        bigL.SetMaterial(left, right);
+
+        smallR.SetMaterial(left, right);
+        normalR.SetMaterial(left, right);
+        bigR.SetMaterial(left, right);
     }
 }
