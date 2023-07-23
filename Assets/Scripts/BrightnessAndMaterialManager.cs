@@ -91,22 +91,22 @@ public class BrightnessAndMaterialManager : MonoBehaviour
     }
 
     private void SetMaterialsOnObjects(Material leftS, Material leftB, Material rightS, Material rightB) {
-        smallL.SetMaterial(leftS, leftB, rightS, rightB);
-        normalL.SetMaterial(leftS, leftB, rightS, rightB);
-        bigL.SetMaterial(leftS, leftB, rightS, rightB);
+        smallL.SetMaterial(leftS, leftB, leftS, leftB);
+        normalL.SetMaterial(leftS, leftB, leftS, leftB);
+        bigL.SetMaterial(leftS, leftB, leftS, leftB);
 
-        smallR.SetMaterial(leftS, leftB, rightS, rightB);
-        normalR.SetMaterial(leftS, leftB, rightS, rightB);
-        bigR.SetMaterial(leftS, leftB, rightS, rightB);
+        smallR.SetMaterial(rightS, rightB, rightS, rightB);
+        normalR.SetMaterial(rightS, rightB, rightS, rightB);
+        bigR.SetMaterial(rightS, rightB, rightS, rightB);
     }
 
     private void SetMaterialsOnObjects(Material left, Material right) {
-        smallL.SetMaterial(left, right);
-        normalL.SetMaterial(left, right);
-        bigL.SetMaterial(left, right);
+        smallL.SetMaterial(left, left);
+        normalL.SetMaterial(left, left);
+        bigL.SetMaterial(left, left);
 
-        smallR.SetMaterial(left, right);
-        normalR.SetMaterial(left, right);
-        bigR.SetMaterial(left, right);
+        smallR.SetMaterial(right, right);
+        normalR.SetMaterial(right, right);
+        bigR.SetMaterial(right, right);
     }
 }
