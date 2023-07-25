@@ -144,3 +144,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreMultiplier: 10
+  intensity: 0.5
+  duration: 0.1

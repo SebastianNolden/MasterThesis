@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class ScoringPush : MonoBehaviour
 {
-    public int score = 1;
-    public float velocityMinimum = 2f;
+    [SerializeField] int score = 1;
+    [SerializeField] float velocityMinimum = 2f;
     [Range(0,1)]
-    public float clipVolume = 1f;
-    public AudioClip clip;
+    [SerializeField] float clipVolume = 1f;
+    [SerializeField] AudioClip clip;
+    [Range(0, 1)]
+    [SerializeField] float intensity;
+    [SerializeField] float duration;
 
     private void OnTriggerEnter(Collider other) {
         if (other.transform.tag == "Hand") {
             // check for velocity of Hand
             if (other.gameObject.GetComponent<HandVelocity>().GetHandVelocity() < velocityMinimum) return;
+
+            other.gameObject.GetComponentInParent<VRController>().SendHapticImpulse(intensity, duration);
 
             AudioSource.PlayClipAtPoint(clip, transform.position, clipVolume);
 

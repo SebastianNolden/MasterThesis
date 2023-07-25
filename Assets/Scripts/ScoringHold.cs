@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class ScoringHold : MonoBehaviour
 {
-    public int scoreMultiplier = 10;
+    [SerializeField] int scoreMultiplier = 10;
+    [Range(0, 1)]
+    [SerializeField] float intensity;
+    [SerializeField] float duration;
 
     bool isColliding = false;
     float scoringTime = 0f;
+    Collider col;
 
     // Update is called once per frame
     void Update()
     {
         if (isColliding) {
             scoringTime += Time.deltaTime;
+
+            if (col != null) col.gameObject.GetComponentInParent<VRController>().SendHapticImpulse(intensity, duration);
         } 
     }
 
@@ -25,6 +31,7 @@ public class ScoringHold : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.transform.tag == "Hand") {
             isColliding = true;
+            col = other;
         }
     }
 
@@ -32,6 +39,7 @@ public class ScoringHold : MonoBehaviour
         if (other.transform.tag == "Hand") {
             Reset();
             isColliding = false;
+            col = null;
         }
     }
 }
