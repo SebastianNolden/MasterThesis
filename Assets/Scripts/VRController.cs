@@ -7,7 +7,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR;
 
 public class VRController : XRController {    
-    float weight = 1f;
+    [SerializeField] float weight = 1f;
+    [SerializeField] Transform offsetVector;
 
 
     protected override void UpdateTrackingInput(XRControllerState controllerState) {
@@ -25,6 +26,7 @@ public class VRController : XRController {
                 inputDevice.TryGetFeatureValue(CommonUsages.devicePosition, out var devicePosition)) {
 
                 Vector3 newPosition = new Vector3(devicePosition.x, devicePosition.y * weight, devicePosition.z);
+                newPosition = newPosition - offsetVector.localPosition;
                 controllerState.position = newPosition;
             }
 

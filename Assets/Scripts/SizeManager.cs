@@ -47,6 +47,18 @@ public class SizeManager : MonoBehaviour
         SetObjectActive(dumbbellHalfL, dumbbellNormalR);
     }
 
+    public void SetNormalandNormal() {
+        SetObjectActive(dumbbellNormalL, dumbbellNormalR);
+    }
+
+    public void SetSmallandSmall() {
+        SetObjectActive(dumbbellHalfL, dumbbellHalfR);
+    }
+
+    public void SetBigandBig() {
+        SetObjectActive(dumbbellOneandhalfL, dumbbellOneandhalfL);
+    }
+
     private void DeactivateAll() {
         dumbbellHalfL.SetActive(false);
         dumbbellNormalL.SetActive(false);

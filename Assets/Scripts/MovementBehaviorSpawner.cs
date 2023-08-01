@@ -4,32 +4,48 @@ using UnityEngine;
 
 public class MovementBehaviorSpawner : MonoBehaviour
 {
+    [SerializeField] float timeToPlaySongInSeconds = 10f;
+    [SerializeField] int secondsForEndFaiding = 5;
+    [SerializeField] float faidingValue = 1f;
+    [Range(0, 1)]
+    [SerializeField] float audioVolume = 1f;
     [SerializeField] GameObject[] spawnPoints;
     [SerializeField] AudioSource audioSource;
     [SerializeField] Song song;
     [SerializeField] GameObject parentForSpawnedObjects;
+    [SerializeField] StudyController studyController;
 
     float secPerBeat = 0f;
     float songPosition = 0f;
     float songPositionInBeats = 0f;
     float dspSongTime = 0f;
     int positionInArray = 0;
-
-    private void Start() {
-        StartSong();
-    }
-
+    bool spawning = false;
 
     // Update is called once per frame
     void Update()
     {
         if (audioSource.isPlaying) {
             UpdateSongPosition();
-            SpawnGameobjects();
+            if (spawning) SpawnGameobjects();
+        } 
+
+        if (songPosition >= timeToPlaySongInSeconds && audioSource.isPlaying) {
+            audioSource.volume -= faidingValue * Time.deltaTime;
+            spawning = false;
+        }
+
+        if (songPosition >= (timeToPlaySongInSeconds + secondsForEndFaiding) && audioSource.isPlaying) {
+            EndSong();
         }
     }
 
-    private void StartSong() {
+    private void EndSong() {
+        audioSource.Stop();
+        studyController.SongEnded();
+    }
+
+    public void StartSong() {
         // Calculate the number of seconds in each beat
         secPerBeat = 60f / song.songBpm;
 
@@ -38,7 +54,9 @@ public class MovementBehaviorSpawner : MonoBehaviour
 
         // Start the music
         audioSource.clip = song.song;
+        audioSource.volume = audioVolume;
         audioSource.Play();
+        spawning = true;
 
         // reset spawncounter
         positionInArray = 0;

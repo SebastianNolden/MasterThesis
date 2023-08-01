@@ -31,4 +31,9 @@ public class Score : MonoBehaviour
         // Update visual Score in game here
         value.text = score + "";
     }
+
+    public void ResetScore() {
+        score = 0;
+        value.text = score + "";
+    }
 }

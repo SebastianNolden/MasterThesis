@@ -90,6 +90,18 @@ public class BrightnessAndMaterialManager : MonoBehaviour
         SetMaterialsOnObjects(metalMatS, metalMatB, polyMat, polyMat);
     }
 
+    public void SetMetalandMetal() {
+        SetMaterialsOnObjects(metalMatS, metalMatB, metalMatS, metalMatB);
+    }
+
+    public void SetPolyandPoly() {
+        SetMaterialsOnObjects(polyMat, polyMat);
+    }
+
+    public void SetWoodandWood() {
+        SetMaterialsOnObjects(woodMat, woodMat);
+    }
+
     private void SetMaterialsOnObjects(Material leftS, Material leftB, Material rightS, Material rightB) {
         smallL.SetMaterial(leftS, leftB, leftS, leftB);
         normalL.SetMaterial(leftS, leftB, leftS, leftB);
