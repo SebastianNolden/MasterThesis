@@ -11,7 +11,7 @@ public class MovementBehaviorSpawner : MonoBehaviour
     [SerializeField] float audioVolume = 1f;
     [SerializeField] GameObject[] spawnPoints;
     [SerializeField] AudioSource audioSource;
-    [SerializeField] Song song;
+    [SerializeField] Song[] songs;
     [SerializeField] GameObject parentForSpawnedObjects;
     [SerializeField] StudyController studyController;
 
@@ -21,6 +21,7 @@ public class MovementBehaviorSpawner : MonoBehaviour
     float dspSongTime = 0f;
     int positionInArray = 0;
     bool spawning = false;
+    Song song;
 
     // Update is called once per frame
     void Update()
@@ -46,6 +47,9 @@ public class MovementBehaviorSpawner : MonoBehaviour
     }
 
     public void StartSong() {
+        // choose a song
+        song = songs[Random.Range(0, songs.Length)];
+
         // Calculate the number of seconds in each beat
         secPerBeat = 60f / song.songBpm;
 

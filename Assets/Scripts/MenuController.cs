@@ -9,6 +9,7 @@ public class MenuController : MonoBehaviour
 
     [SerializeField] GameObject startStudyButton;
     [SerializeField] GameObject nextSongButton;
+    [SerializeField] GameObject selectStudy;
 
     [SerializeField] GameObject studyCodeUI;
  
@@ -29,8 +30,10 @@ public class MenuController : MonoBehaviour
     public void StudyEnded() {
         SetHandsInteractable(true);
         SetStartStudyButton(true);
+        selectStudy.SetActive(true);
         SetStudyCodeUI(false);
     }
+
     private void SetStartStudyButton(bool active) {
         startStudyButton.SetActive(active);
     }

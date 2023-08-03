@@ -12,20 +12,44 @@ public class ScoringPush : MonoBehaviour
     [Range(0, 1)]
     [SerializeField] float intensity;
     [SerializeField] float duration;
+    [SerializeField] float destroyTimeInSeconds = 0.5f;
+
+    AudioSource audioSource;
+    bool gotHit = false;
+    MeshRenderer meshRenderer;
+
+    private void Start() {
+        audioSource = transform.GetComponent<AudioSource>();
+        audioSource.clip = clip;
+
+        meshRenderer = transform.GetComponent<MeshRenderer>();
+
+        gotHit = false;
+    }
 
     private void OnTriggerEnter(Collider other) {
         if (other.transform.tag == "Hand") {
             // check for velocity of Hand
             if (other.gameObject.GetComponent<HandVelocity>().GetHandVelocity() < velocityMinimum) return;
 
-            other.gameObject.GetComponentInParent<VRController>().SendHapticImpulse(intensity, duration);
+            if (!gotHit) {
+                gotHit = true;
+                
+                //AudioSource.PlayClipAtPoint(clip, transform.position, clipVolume);
+                audioSource.Play();
 
-            AudioSource.PlayClipAtPoint(clip, transform.position, clipVolume);
+                // Send haptic feedback
+                other.gameObject.GetComponentInParent<VRController>().SendHapticImpulse(intensity, duration);
 
-            Score.Instance.AddScore(score);
+                // disable the Mesh of the Ball
+                meshRenderer.enabled = false;
 
-            // Destroy Ball
-            Destroy(this.gameObject);
+                Score.Instance.AddScore(score);
+
+                // Destroy Ball
+                Destroy(this.gameObject, destroyTimeInSeconds);
+                // Destroy(this.gameObject);
+            }
         }
     }
 }

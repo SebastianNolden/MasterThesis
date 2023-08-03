@@ -21,6 +21,9 @@ public class StudyController : MonoBehaviour
     [SerializeField] CDRatioManager cdManager;
     [SerializeField] AllTogetherStudy allTogether;
 
+    [SerializeField] TMP_InputField inputField;
+    [SerializeField] TMP_Dropdown dropDown;
+
     private StudyOption currentStudyOption;
     private StudyOption[] studyCode;
     private char studyVersion;
@@ -171,6 +174,44 @@ public class StudyController : MonoBehaviour
 
         studyTextUI.text = StudyCodeToString();
         currentStudyOption = studyCode[0];
+    }
+
+    public void SetStudyCode() {
+        string code = inputField.text;
+        int startStudy = dropDown.value;
+
+        studyCounter = startStudy;
+        studyVersion = code[0];
+
+        // 0 - size; 1 - mat; 2 - bright;
+        studyCode[0] = StudyOptionFromInt(int.Parse(code.Substring(1,1)));
+        studyCode[1] = StudyOptionFromInt(int.Parse(code.Substring(2, 1)));
+        studyCode[2] = StudyOptionFromInt(int.Parse(code.Substring(3, 1)));
+
+        studyCode[3] = StudyOption.CDRatio;
+        studyCode[4] = StudyOption.AllTogether;
+
+        studyTextUI.text = StudyCodeToString();
+        currentStudyOption = studyCode[studyCounter];
+
+        Debug.Log(currentStudyOption);
+    }
+
+    private StudyOption StudyOptionFromInt(int option) {
+        switch (option) {
+            case 4: 
+                return StudyOption.AllTogether;
+            case 3:
+                return StudyOption.CDRatio;
+            case 2:
+                return StudyOption.Brightness;
+            case 1:
+                return StudyOption.Material;
+            case 0:
+                return StudyOption.Size;
+            default:
+                return StudyOption.Size;
+        }
     }
 
     private string StudyCodeToString() {
