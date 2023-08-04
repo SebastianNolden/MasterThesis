@@ -17,26 +17,26 @@ MonoBehaviour:
   firstBeatOffset: 0
   musicSpawn:
   - beat: 10
-    spawnPoint: 6
-    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+    spawnPoint: 2
+    spawnObject: {fileID: 8820106882557533116, guid: 17357c983b770e44c9109f3985e67b79,
       type: 3}
   - beat: 10
-    spawnPoint: 5
-    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+    spawnPoint: 6
+    spawnObject: {fileID: 8820106882557533116, guid: 17357c983b770e44c9109f3985e67b79,
+      type: 3}
+  - beat: 15
+    spawnPoint: 8
+    spawnObject: {fileID: 8820106882557533116, guid: 17357c983b770e44c9109f3985e67b79,
+      type: 3}
+  - beat: 15
+    spawnPoint: 4
+    spawnObject: {fileID: 8820106882557533116, guid: 17357c983b770e44c9109f3985e67b79,
       type: 3}
   - beat: 20
-    spawnPoint: 5
-    spawnObject: {fileID: 7618111283907253920, guid: a22d5f7288f7f264c803aa9f82985caa,
+    spawnPoint: 3
+    spawnObject: {fileID: 8820106882557533116, guid: 17357c983b770e44c9109f3985e67b79,
       type: 3}
   - beat: 20
-    spawnPoint: 6
-    spawnObject: {fileID: 7618111283907253920, guid: a22d5f7288f7f264c803aa9f82985caa,
-      type: 3}
-  - beat: 30
-    spawnPoint: 6
-    spawnObject: {fileID: 6769702021585626566, guid: a0fb0bdc2f420124889ccccf30fd1082,
-      type: 3}
-  - beat: 30
-    spawnPoint: 5
-    spawnObject: {fileID: 5785085555776843823, guid: f8d02159b65fc5c4d850e358874b11fe,
+    spawnPoint: 7
+    spawnObject: {fileID: 8820106882557533116, guid: 17357c983b770e44c9109f3985e67b79,
       type: 3}
