@@ -156,7 +156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5093861956069350864}
   m_Layer: 0
-  m_Name: Straight Line
+  m_Name: 7_Straight Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

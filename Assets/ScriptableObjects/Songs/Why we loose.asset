@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 521f6657269f85e44a297510d985516e, type: 3}
+  m_Name: Why we loose
+  m_EditorClassIdentifier: 
+  song: {fileID: 8300000, guid: 8f99f27b006cf204ba9286dad57cac69, type: 3}
+  songBpm: 175
+  firstBeatOffset: 0
+  musicSpawn:
+  - beat: 0
+    spawnPoint: 0
+    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+      type: 3}
+  - beat: 0
+    spawnPoint: 2
+    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+      type: 3}
+  - beat: 2
+    spawnPoint: 3
+    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+      type: 3}
+  - beat: 2
+    spawnPoint: 4
+    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+      type: 3}
+  - beat: 4
+    spawnPoint: 7
+    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+      type: 3}
+  - beat: 4
+    spawnPoint: 8
+    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+      type: 3}
+  - beat: 8
+    spawnPoint: 6
+    spawnObject: {fileID: 3349007163653892249, guid: 72a3b15c5f9357a4cb60bb13c9f93ac8,
+      type: 3}
+  - beat: 8
+    spawnPoint: 2
+    spawnObject: {fileID: 7412484781003126822, guid: cbcf23d98cf6e1141b21c1540f0e7c78,
+      type: 3}
+  - beat: 13
+    spawnPoint: 3
+    spawnObject: {fileID: 385678666927507344, guid: 12be6982a65024c48a69c3f4b5bf87d1,
+      type: 3}
+  - beat: 14
+    spawnPoint: 4
+    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+      type: 3}
+  - beat: 18
+    spawnPoint: 5
+    spawnObject: {fileID: 2487990032174090957, guid: a0fb0bdc2f420124889ccccf30fd1082,
+      type: 3}
+  - beat: 19
+    spawnPoint: 4
+    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+      type: 3}
+  - beat: 23
+    spawnPoint: 8
+    spawnObject: {fileID: 7822570289921346118, guid: a22d5f7288f7f264c803aa9f82985caa,
+      type: 3}
+  - beat: 23
+    spawnPoint: 6
+    spawnObject: {fileID: 7822570289921346118, guid: a22d5f7288f7f264c803aa9f82985caa,
+      type: 3}
+  - beat: 28
+    spawnPoint: 5
+    spawnObject: {fileID: 7822570289921346118, guid: a22d5f7288f7f264c803aa9f82985caa,
+      type: 3}
+  - beat: 28
+    spawnPoint: 3
+    spawnObject: {fileID: 7822570289921346118, guid: a22d5f7288f7f264c803aa9f82985caa,
+      type: 3}
+  - beat: 33
+    spawnPoint: 2
+    spawnObject: {fileID: 7822570289921346118, guid: a22d5f7288f7f264c803aa9f82985caa,
+      type: 3}
+  - beat: 33
+    spawnPoint: 0
+    spawnObject: {fileID: 7822570289921346118, guid: a22d5f7288f7f264c803aa9f82985caa,
+      type: 3}
+  - beat: 40
+    spawnPoint: 3
+    spawnObject: {fileID: 8820106882557533116, guid: 17357c983b770e44c9109f3985e67b79,
+      type: 3}
+  - beat: 40
+    spawnPoint: 4
+    spawnObject: {fileID: 8820106882557533116, guid: 17357c983b770e44c9109f3985e67b79,
+      type: 3}
+  - beat: 45
+    spawnPoint: 6
+    spawnObject: {fileID: 5785085555776843823, guid: f8d02159b65fc5c4d850e358874b11fe,
+      type: 3}
+  - beat: 45
+    spawnPoint: 7
+    spawnObject: {fileID: 5785085555776843823, guid: f8d02159b65fc5c4d850e358874b11fe,
+      type: 3}
+  - beat: 50
+    spawnPoint: 4
+    spawnObject: {fileID: 8820106882557533116, guid: 17357c983b770e44c9109f3985e67b79,
+      type: 3}
+  - beat: 50
+    spawnPoint: 5
+    spawnObject: {fileID: 8820106882557533116, guid: 17357c983b770e44c9109f3985e67b79,
+      type: 3}
+  - beat: 58
+    spawnPoint: 0
+    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+      type: 3}
+  - beat: 58
+    spawnPoint: 2
+    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+      type: 3}
+  - beat: 56
+    spawnPoint: 3
+    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+      type: 3}
+  - beat: 56
+    spawnPoint: 4
+    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+      type: 3}
+  - beat: 54
+    spawnPoint: 7
+    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+      type: 3}
+  - beat: 54
+    spawnPoint: 8
+    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+      type: 3}
+  - beat: 62
+    spawnPoint: 8
+    spawnObject: {fileID: 3349007163653892249, guid: 72a3b15c5f9357a4cb60bb13c9f93ac8,
+      type: 3}
+  - beat: 62
+    spawnPoint: 0
+    spawnObject: {fileID: 7412484781003126822, guid: cbcf23d98cf6e1141b21c1540f0e7c78,
+      type: 3}
+  - beat: 67
+    spawnPoint: 0
+    spawnObject: {fileID: 385678666927507344, guid: 12be6982a65024c48a69c3f4b5bf87d1,
+      type: 3}
+  - beat: 68
+    spawnPoint: 1
+    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+      type: 3}
+  - beat: 72
+    spawnPoint: 8
+    spawnObject: {fileID: 2487990032174090957, guid: a0fb0bdc2f420124889ccccf30fd1082,
+      type: 3}
+  - beat: 73
+    spawnPoint: 7
+    spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
+      type: 3}
+  - beat: 77
+    spawnPoint: 2
+    spawnObject: {fileID: 7822570289921346118, guid: a22d5f7288f7f264c803aa9f82985caa,
+      type: 3}
+  - beat: 77
+    spawnPoint: 0
+    spawnObject: {fileID: 7822570289921346118, guid: a22d5f7288f7f264c803aa9f82985caa,
+      type: 3}
+  - beat: 82
+    spawnPoint: 5
+    spawnObject: {fileID: 7822570289921346118, guid: a22d5f7288f7f264c803aa9f82985caa,
+      type: 3}
+  - beat: 82
+    spawnPoint: 3
+    spawnObject: {fileID: 7822570289921346118, guid: a22d5f7288f7f264c803aa9f82985caa,
+      type: 3}
+  - beat: 87
+    spawnPoint: 2
+    spawnObject: {fileID: 7822570289921346118, guid: a22d5f7288f7f264c803aa9f82985caa,
+      type: 3}
+  - beat: 87
+    spawnPoint: 0
+    spawnObject: {fileID: 7822570289921346118, guid: a22d5f7288f7f264c803aa9f82985caa,
+      type: 3}
+  - beat: 94
+    spawnPoint: 3
+    spawnObject: {fileID: 8820106882557533116, guid: 17357c983b770e44c9109f3985e67b79,
+      type: 3}
+  - beat: 94
+    spawnPoint: 5
+    spawnObject: {fileID: 8820106882557533116, guid: 17357c983b770e44c9109f3985e67b79,
+      type: 3}
+  - beat: 99
+    spawnPoint: 6
+    spawnObject: {fileID: 5785085555776843823, guid: f8d02159b65fc5c4d850e358874b11fe,
+      type: 3}
+  - beat: 99
+    spawnPoint: 7
+    spawnObject: {fileID: 5785085555776843823, guid: f8d02159b65fc5c4d850e358874b11fe,
+      type: 3}
+  - beat: 104
+    spawnPoint: 4
+    spawnObject: {fileID: 8820106882557533116, guid: 17357c983b770e44c9109f3985e67b79,
+      type: 3}
+  - beat: 104
+    spawnPoint: 5
+    spawnObject: {fileID: 8820106882557533116, guid: 17357c983b770e44c9109f3985e67b79,
+      type: 3}

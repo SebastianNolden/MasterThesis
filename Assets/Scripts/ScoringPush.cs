@@ -34,8 +34,9 @@ public class ScoringPush : MonoBehaviour
 
             if (!gotHit) {
                 gotHit = true;
-                
+
                 //AudioSource.PlayClipAtPoint(clip, transform.position, clipVolume);
+                audioSource.volume = clipVolume;
                 audioSource.Play();
 
                 // Send haptic feedback

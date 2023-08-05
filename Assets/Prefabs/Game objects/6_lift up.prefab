@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2487990032174090957
+--- !u!1 &7412484781003126822
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,82 +8,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6475419230104215624}
+  - component: {fileID: 3920144375457242359}
+  - component: {fileID: 4894188930737590745}
+  - component: {fileID: 1958609529526804864}
+  - component: {fileID: 1792594181333345655}
+  - component: {fileID: 747048691912277571}
+  - component: {fileID: 1927992980621678340}
+  - component: {fileID: -1381500398705211163}
   m_Layer: 0
-  m_Name: CurveRightToLeft
+  m_Name: 6_lift up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6475419230104215624
+--- !u!4 &3920144375457242359
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2487990032174090957}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 322.69, y: 3, z: 185.33}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8060152583286971778}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6659447631238811764
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8060152583286971778}
-  - component: {fileID: 7983023074547746157}
-  - component: {fileID: 8364649726396981206}
-  - component: {fileID: 1815176657647166187}
-  - component: {fileID: 6255410720043057288}
-  - component: {fileID: 6599375624265376777}
-  - component: {fileID: 7216732502231262709}
-  m_Layer: 0
-  m_Name: CurveRightToLeft
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8060152583286971778
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6659447631238811764}
-  m_LocalRotation: {x: 0, y: 0.2164396, z: 0, w: 0.97629607}
-  m_LocalPosition: {x: -0.02017212, y: 0, z: 0.2011261}
+  m_GameObject: {fileID: 7412484781003126822}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.025061, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6475419230104215624}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 25, z: 0}
---- !u!33 &7983023074547746157
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4894188930737590745
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6659447631238811764}
-  m_Mesh: {fileID: 2026425019520300902, guid: 6d302fa7b82a6504da178d61f6ea544b, type: 3}
---- !u!23 &8364649726396981206
+  m_GameObject: {fileID: 7412484781003126822}
+  m_Mesh: {fileID: 6751428012843480485, guid: 6d302fa7b82a6504da178d61f6ea544b, type: 3}
+--- !u!23 &1958609529526804864
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6659447631238811764}
+  m_GameObject: {fileID: 7412484781003126822}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -119,13 +87,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1815176657647166187
+--- !u!114 &1792594181333345655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6659447631238811764}
+  m_GameObject: {fileID: 7412484781003126822}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad15c4cceb3c5c741bc806f2c5e2c300, type: 3}
@@ -133,27 +101,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   direction: {x: 1, y: 0, z: 0}
---- !u!64 &6255410720043057288
+--- !u!114 &747048691912277571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7412484781003126822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425de9165502704409614548431deb9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreMultiplier: 10
+  intensity: 0
+  duration: 0
+--- !u!64 &1927992980621678340
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6659447631238811764}
+  m_GameObject: {fileID: 7412484781003126822}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 2026425019520300902, guid: 6d302fa7b82a6504da178d61f6ea544b, type: 3}
---- !u!54 &6599375624265376777
+  m_Mesh: {fileID: 6751428012843480485, guid: 6d302fa7b82a6504da178d61f6ea544b, type: 3}
+--- !u!54 &-1381500398705211163
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6659447631238811764}
+  m_GameObject: {fileID: 7412484781003126822}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -163,18 +146,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 124
   m_CollisionDetection: 0
---- !u!114 &7216732502231262709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6659447631238811764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 425de9165502704409614548431deb9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreMultiplier: 10
-  intensity: 0.5
-  duration: 0.1

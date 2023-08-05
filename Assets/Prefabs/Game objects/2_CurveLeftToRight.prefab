@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 590848931134888771}
   m_Layer: 0
-  m_Name: CurveLeftToRight
+  m_Name: 2_CurveLeftToRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
