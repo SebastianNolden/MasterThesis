@@ -8,8 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Easy Water
-  m_Shader: {fileID: -6465566751694194690, guid: a163e6edbdb3b904b9f6c487cc337c4b,
-    type: 3}
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -21,6 +20,26 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Foam:
         m_Texture: {fileID: 2800000, guid: 535afe114b6bac242880b1e577aa2b62, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -29,8 +48,24 @@ Material:
         m_Texture: {fileID: 2800000, guid: 803b40d65fa47e3468a71cf13785adf7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Main_Normal:
         m_Texture: {fileID: 2800000, guid: 177fa9a2b62a6a54399f52d76323c3e3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Second_Normal:
@@ -53,24 +88,42 @@ Material:
     m_Floats:
     - _Albedo_Advanced_Colouring: 1
     - _Alpha_Channel: 1
+    - _BumpScale: 1
+    - _Cutoff: 0.5
     - _Depth: 0.03
     - _Depth_Strength: 1
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
     - _False_Displacement_Strength: 0.4
     - _False_Displacement_Tiling: 9
     - _Foam_Normal_Render: 1
     - _Foam_Render: 1
     - _Fresnel_Effect_Power: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
     - _Gradient: 1
+    - _Metallic: 0
+    - _Mode: 0
     - _Normal_Strength: 0.75
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Smoothness: 0.95
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
     - _Speed: 0.75
+    - _SrcBlend: 1
     - _Tiling: 9
+    - _UVSec: 0
+    - _ZWrite: 1
     m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color_A: {r: 0.26717696, g: 0.6548132, b: 0.7169812, a: 0.4}
     - _Color_B: {r: 0.47552508, g: 0.6534131, b: 0.735849, a: 0.6039216}
     - _Color_C: {r: 0.27058825, g: 0.75686276, b: 0.649554, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Main_Direction: {r: 0.5, g: -0.5, b: 0, a: 0}
     - _Second_Direction: {r: -0.5, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []
