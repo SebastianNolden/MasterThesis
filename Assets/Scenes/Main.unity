@@ -27363,8 +27363,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6afc030025d100342a347c42612a75c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToPlaySongInSeconds: 30
-  secondsForEndFaiding: 5
+  timeToPlaySongInSeconds: 10
+  secondsForEndFaiding: 3
   faidingValue: 1
   audioVolume: 1
   spawnPoints:
@@ -27380,6 +27380,9 @@ MonoBehaviour:
   audioSource: {fileID: 1359327665}
   songs:
   - {fileID: 11400000, guid: 2ea6229bdbab1ed44a10c1e851c5e499, type: 2}
+  - {fileID: 11400000, guid: f7eb572f2c6eb7149bfe87fa5c83d85c, type: 2}
+  - {fileID: 11400000, guid: 1ae8876127b08e342b8f16ca6cb549b6, type: 2}
+  - {fileID: 11400000, guid: 5301a6b260e7ab94597b2101c4fb2640, type: 2}
   parentForSpawnedObjects: {fileID: 1429741237}
   studyController: {fileID: 1821360151}
 --- !u!4 &1984259764

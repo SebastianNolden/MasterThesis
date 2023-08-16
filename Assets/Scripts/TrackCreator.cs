@@ -28,6 +28,8 @@ public class TrackCreator : MonoBehaviour
 
         // add Array to Song
         song.musicSpawn = track_array;
+
+        Debug.Log("Track was generated in " + song.name);
     }
 
     private int GetSpawnPoint(Vector3 position) {
