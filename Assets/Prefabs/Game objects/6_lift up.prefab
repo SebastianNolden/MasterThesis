@@ -114,8 +114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreMultiplier: 10
-  intensity: 0
-  duration: 0
+  intensity: 0.5
+  duration: 0.1
 --- !u!64 &1927992980621678340
 MeshCollider:
   m_ObjectHideFlags: 0

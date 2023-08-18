@@ -56,7 +56,7 @@ public class SizeManager : MonoBehaviour
     }
 
     public void SetBigandBig() {
-        SetObjectActive(dumbbellOneandhalfL, dumbbellOneandhalfL);
+        SetObjectActive(dumbbellOneandhalfL, dumbbellOneandhalfR);
     }
 
     private void DeactivateAll() {

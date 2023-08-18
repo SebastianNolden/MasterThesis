@@ -8396,6 +8396,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1851040863}
+        m_TargetAssemblyTypeName: Score, Assembly-CSharp
+        m_MethodName: ResetScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &601571096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14698,7 +14710,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092179387}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17074,7 +17086,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288978856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23152,9 +23164,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightHand: {fileID: 541096548}
   leftHand: {fileID: 1728657558}
-  lightweight: 1.2
+  lightweight: 1.1
   normal: 1
-  heavy: 0.8
+  heavy: 0.9
 --- !u!4 &1727272444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 431444, guid: 5e617e90ac28ce7488be6a63235b1f32,
@@ -27380,9 +27392,6 @@ MonoBehaviour:
   audioSource: {fileID: 1359327665}
   songs:
   - {fileID: 11400000, guid: 2ea6229bdbab1ed44a10c1e851c5e499, type: 2}
-  - {fileID: 11400000, guid: f7eb572f2c6eb7149bfe87fa5c83d85c, type: 2}
-  - {fileID: 11400000, guid: 1ae8876127b08e342b8f16ca6cb549b6, type: 2}
-  - {fileID: 11400000, guid: 5301a6b260e7ab94597b2101c4fb2640, type: 2}
   parentForSpawnedObjects: {fileID: 1429741237}
   studyController: {fileID: 1821360151}
 --- !u!4 &1984259764
