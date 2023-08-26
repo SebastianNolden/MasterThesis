@@ -133,6 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   direction: {x: 1, y: 0, z: 0}
+  parent: {fileID: 2487990032174090957}
 --- !u!64 &6255410720043057288
 MeshCollider:
   m_ObjectHideFlags: 0

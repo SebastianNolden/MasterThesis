@@ -45,7 +45,7 @@ public class StudyController : MonoBehaviour
         if (currentStudyOption == StudyOption.AllTogether && subStudyCounter == 2) {
             menuController.StudyEnded();
         } else {
-            menuController.SetNextSongButton();
+            menuController.SetNextConditionButton();
         }
 
         if (subStudyCounter == 2) {

@@ -120,12 +120,12 @@ MonoBehaviour:
     spawnPoint: 5
     spawnObject: {fileID: 8820106882557533116, guid: 17357c983b770e44c9109f3985e67b79,
       type: 3}
-  - beat: 63
-    spawnPoint: 1
+  - beat: 59
+    spawnPoint: 7
     spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
       type: 3}
-  - beat: 63
-    spawnPoint: 2
+  - beat: 59
+    spawnPoint: 8
     spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
       type: 3}
   - beat: 61
@@ -136,12 +136,12 @@ MonoBehaviour:
     spawnPoint: 4
     spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
       type: 3}
-  - beat: 59
-    spawnPoint: 7
+  - beat: 63
+    spawnPoint: 1
     spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
       type: 3}
-  - beat: 59
-    spawnPoint: 8
+  - beat: 63
+    spawnPoint: 2
     spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
       type: 3}
   - beat: 67
@@ -492,8 +492,16 @@ MonoBehaviour:
     spawnPoint: 6
     spawnObject: {fileID: 3349007163653892249, guid: 72a3b15c5f9357a4cb60bb13c9f93ac8,
       type: 3}
+  - beat: 271
+    spawnPoint: 7
+    spawnObject: {fileID: 3349007163653892249, guid: 72a3b15c5f9357a4cb60bb13c9f93ac8,
+      type: 3}
   - beat: 276
     spawnPoint: 2
+    spawnObject: {fileID: 7412484781003126822, guid: cbcf23d98cf6e1141b21c1540f0e7c78,
+      type: 3}
+  - beat: 276
+    spawnPoint: 1
     spawnObject: {fileID: 7412484781003126822, guid: cbcf23d98cf6e1141b21c1540f0e7c78,
       type: 3}
   - beat: 281
@@ -560,12 +568,12 @@ MonoBehaviour:
     spawnPoint: 5
     spawnObject: {fileID: 8820106882557533116, guid: 17357c983b770e44c9109f3985e67b79,
       type: 3}
-  - beat: 326
-    spawnPoint: 1
+  - beat: 322
+    spawnPoint: 7
     spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
       type: 3}
-  - beat: 326
-    spawnPoint: 2
+  - beat: 322
+    spawnPoint: 8
     spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
       type: 3}
   - beat: 324
@@ -576,20 +584,28 @@ MonoBehaviour:
     spawnPoint: 4
     spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
       type: 3}
-  - beat: 322
-    spawnPoint: 7
+  - beat: 326
+    spawnPoint: 1
     spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
       type: 3}
-  - beat: 322
-    spawnPoint: 8
+  - beat: 326
+    spawnPoint: 2
     spawnObject: {fileID: 8760341592672055986, guid: 483608d8f1513444994d17ca2cf6b367,
       type: 3}
   - beat: 330
     spawnPoint: 8
     spawnObject: {fileID: 3349007163653892249, guid: 72a3b15c5f9357a4cb60bb13c9f93ac8,
       type: 3}
+  - beat: 330
+    spawnPoint: 7
+    spawnObject: {fileID: 3349007163653892249, guid: 72a3b15c5f9357a4cb60bb13c9f93ac8,
+      type: 3}
   - beat: 335
     spawnPoint: 0
+    spawnObject: {fileID: 7412484781003126822, guid: cbcf23d98cf6e1141b21c1540f0e7c78,
+      type: 3}
+  - beat: 335
+    spawnPoint: 1
     spawnObject: {fileID: 7412484781003126822, guid: cbcf23d98cf6e1141b21c1540f0e7c78,
       type: 3}
   - beat: 340
@@ -887,22 +903,6 @@ MonoBehaviour:
   - beat: 512
     spawnPoint: 4
     spawnObject: {fileID: 7822570289921346118, guid: a22d5f7288f7f264c803aa9f82985caa,
-      type: 3}
-  - beat: 271
-    spawnPoint: 7
-    spawnObject: {fileID: 3349007163653892249, guid: 72a3b15c5f9357a4cb60bb13c9f93ac8,
-      type: 3}
-  - beat: 276
-    spawnPoint: 1
-    spawnObject: {fileID: 7412484781003126822, guid: cbcf23d98cf6e1141b21c1540f0e7c78,
-      type: 3}
-  - beat: 330
-    spawnPoint: 7
-    spawnObject: {fileID: 3349007163653892249, guid: 72a3b15c5f9357a4cb60bb13c9f93ac8,
-      type: 3}
-  - beat: 335
-    spawnPoint: 1
-    spawnObject: {fileID: 7412484781003126822, guid: cbcf23d98cf6e1141b21c1540f0e7c78,
       type: 3}
   - beat: 517
     spawnPoint: 7

@@ -22,6 +22,12 @@ public class MovementBehaviorSpawner : MonoBehaviour
     int positionInArray = 0;
     bool spawning = false;
     Song song;
+    int songModulo = 0;
+    int maxSongModulo = 0;
+
+    private void Start() {
+        maxSongModulo = 1000000 * songs.Length;
+    }
 
     // Update is called once per frame
     void Update()
@@ -47,8 +53,11 @@ public class MovementBehaviorSpawner : MonoBehaviour
     }
 
     public void StartSong() {
-        // choose a song
-        song = songs[Random.Range(0, songs.Length)];
+        // songs will be played in row and repeat after last one
+        song = songs[songModulo % songs.Length];
+
+        songModulo++;
+        if (songModulo > maxSongModulo) songModulo = 0; 
 
         // Calculate the number of seconds in each beat
         secPerBeat = 60f / song.songBpm;
@@ -68,7 +77,7 @@ public class MovementBehaviorSpawner : MonoBehaviour
 
     private void SpawnGameobjects() {
         // convert from float to int
-        int songPositionInBeatsConverted = (int)songPositionInBeats;
+        int songPositionInBeatsConverted = (int) songPositionInBeats;
 
         // Nothing to spawn anymore, stop function here
         if (positionInArray >= song.musicSpawn.Count) return;
@@ -92,9 +101,10 @@ public class MovementBehaviorSpawner : MonoBehaviour
     }
 
     /***
-     * 0 - 1 - 2 - 3 | 4 - 5 - - 7 | 8 - 9 - 10 - 11
+     * 0 - 1 - 2 - | 3 - 4 - 5 | 6 - 7 - 8
      */
     private GameObject GetSpawnPointByNumber(int number) {
         return spawnPoints[number];
     }
+
 }
