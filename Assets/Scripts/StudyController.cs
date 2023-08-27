@@ -43,6 +43,7 @@ public class StudyController : MonoBehaviour
         // either set next Song Button or start Study Button
         // set studyCode deactive here if start Study Button is called!
         if (currentStudyOption == StudyOption.AllTogether && subStudyCounter == 2) {
+            // studie ended
             menuController.StudyEnded();
         } else {
             menuController.SetNextConditionButton();
@@ -60,10 +61,12 @@ public class StudyController : MonoBehaviour
     }
 
     private void NextStudy() {
-        currentStudyOption = studyCode[++studyCounter];
+        if (currentStudyOption != StudyOption.AllTogether) currentStudyOption = studyCode[++studyCounter];
+    }
 
-        // studie ended
-        if (currentStudyOption == StudyOption.AllTogether && subStudyCounter == 2) studyCounter = 0;
+    public void SetStudyOptionAndCounterToLastRound() {
+        currentStudyOption = StudyOption.AllTogether;
+        subStudyCounter = 2;
     }
 
     private void ResetAllFeatures() {
@@ -173,13 +176,16 @@ public class StudyController : MonoBehaviour
         studyCode[4] = StudyOption.AllTogether;
 
         studyTextUI.text = StudyCodeToString();
-        currentStudyOption = studyCode[0];
+        subStudyCounter = 0;
+        studyCounter = 0;
+        currentStudyOption = studyCode[studyCounter];
     }
 
     public void SetStudyCode() {
         string code = inputField.text;
         int startStudy = dropDown.value;
 
+        subStudyCounter = 0;
         studyCounter = startStudy;
         studyVersion = code[0];
 
@@ -193,8 +199,6 @@ public class StudyController : MonoBehaviour
 
         studyTextUI.text = StudyCodeToString();
         currentStudyOption = studyCode[studyCounter];
-
-        Debug.Log(currentStudyOption);
     }
 
     private StudyOption StudyOptionFromInt(int option) {
